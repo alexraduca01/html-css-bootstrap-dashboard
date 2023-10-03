@@ -18,17 +18,17 @@
             <header>
                 <nav id="navbar" class="container-fluid">
                      <div class="row h-100 align-content-center">
-                        <div class="col-2 h-100 ">
-                            <div class="logo-container h-100 d-flex ps-1">
-                                <img src="img/logo.svg" alt="logo" class="d-none img-fluid w-50 d-lg-block">
+                        <div class="col-2 h-100 p-0">
+                            <div class="logo-container h-100 d-flex justify-content-center">
+                                <img src="img/logo.svg" alt="logo" class="d-none img-fluid w-75 d-lg-block">
                                 <img src="img/mobile-logo.png" alt="logo" class="d-lg-none img-fluid">
                             </div>
                         </div>
-                        <div class="col-8 position-relative h-100 d-flex align-items-center">
+                        <div class="col-9 position-relative h-100 d-flex align-items-center">
                             <span class="input_icon"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></span>
                             <input type="text" class="w-100" placeholder="Prova a cercare: Lezioni di Laravel">
                         </div>
-                        <div class="col-2 h-100">
+                        <div class="col-1 h-100 p-0">
                             <ul class="list-unstyled d-flex justify-content-evenly align-items-center h-100 fs-5">
                                 <li class="d-none d-lg-block"><a href="#" class="text-decoration-none text-black-50"><i class="fa-solid fa-list"></i></a></li>
                                 <li class="d-none d-lg-block"><a href="#" class="text-decoration-none text-black-50"><i class="fa-solid fa-circle-question"></i></a></li>
@@ -53,8 +53,26 @@
 
             <main class="d-flex">
 
-                <div id="sidebar" class="bg_sidebar">
-
+                <div id="sidebar" class="bg_sidebar p-3 d-flex flex-column justify-content-between">
+                    <div class="my-4">
+                        <ul class="nav flex-column gap-3">
+                            <li class="nav-item">
+                              <a class="nav-link text-white p-0 fs-5" aria-current="page" href="#"><i class="fa-solid fa-house"></i> <span class="ms-2">Home</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white p-0 fs-5" href="#"><i class="fa-solid fa-chart-simple"></i> <span class="ms-3">Stats</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white p-0 fs-5" href="#"><i class="fa-solid fa-signal"></i> <span class="ms-2">Signals</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fs-5">
+                        <a href="#" class="text-white text-decoration-none">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="ms-2">Admin</span>
+                        </a>
+                    </div>
                 </div>
                 <div id="main_box">
                     <div id="main_navbar" class="bg_navbar w-100">
