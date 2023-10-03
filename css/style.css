@@ -1,0 +1,26 @@
+/* utility */
+
+:root {
+    --color-bg-search-bar: #e5e5e5;
+    --color-bg-body: #f8f9fa;
+    --color-side-bar: #0f263d;
+    --color-nav-bar: #1b72e8;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* colors */
+
+.bg_searchbar {
+    background-color: var(--color-bg-search-bar);
+}
+.bg_body {
+    background-color: var(--color-bg-body);
+}
+.bg_sidebar {
+    background-color: var(--color-side-bar);
+}
+.bg_navbar {
+    background-color: var(--color-nav-bar);
+}
