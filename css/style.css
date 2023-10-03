@@ -9,6 +9,28 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.webapp_wrapper {
+    width: 100%;
+    height: 100vh;
+}
+#navbar {
+    width: 100%;
+    height: 80px;
+}
+main {
+    width: 100%;
+    height: calc(100% - 80px);
+}
+#sidebar {
+    background-image: url(../img/sidebar-bg.png);
+    width: 150px;
+    height: 100%;
+}
+#main_box {
+    width: calc(100% - 150px);
+    height: 100%;
+}
+
 
 /* colors */
 
