@@ -24,6 +24,7 @@ main {
     height: calc(100% - 80px);
 }
 #sidebar {
+    padding: 1rem;
     background-image: url(../img/sidebar-bg.png);
     width: 150px;
     height: 100%;
@@ -49,6 +50,13 @@ input[type=text]  {
 .dropdown-toggle::after{
     content: none!important;
 }
+.navbar_list {
+    align-items: center;
+}
+.badge_center {
+    position: relative;
+    bottom: 5px;
+}
 
 /* colors */
 
@@ -63,4 +71,31 @@ input[type=text]  {
 }
 .bg_navbar {
     background-color: var(--color-nav-bar);
+}
+.bg_badge {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+    #sidebar {
+        width: 50px;
+        padding: 0.8rem;
+    }
+    #main_box {
+        width: calc(100% - 50px);
+    }
+}
+@media screen and (max-width: 578px) {
+    .navbar_list {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .navbar_list :nth-child(1) {
+        order: 2;
+    }
+    .navbar_list :nth-child(3) {
+        order: 3;
+    }
 }
