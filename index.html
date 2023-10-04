@@ -77,7 +77,7 @@
                 <div id="main_box">
                     <div id="main_navbar" class="bg_navbar py-3 px-3 w-100">
                         <ul class="nav navbar_list align-content-center text-white">
-                            <li class="col-12 col-md-5">
+                            <li class="col-12 order-sm-0 col-md-5">
                                 <h1>Boolean <a href="#" class="text-decoration-none text-white"><span class="fs-6 bg_badge fw-normal badge_center rounded-pill p-2">Piano Blaze</span></a></h1>
                                 <ul class="list-unstyled">
                                     <li class="d-inline"><a href="#" class="text-decoration-none text-white"><span class="fs-6 bg_badge rounded-pill py-1 px-2">3 app</span></a></li>
@@ -88,20 +88,82 @@
                                     <li class="d-none d-lg-inline"><a href="#" class="text-decoration-none text-white"><span class="fs-6 bg_badge rounded-pill py-1 px-2">Boolean blog app</span></a></li>
                                 </ul>
                             </li>
-                            <li class="col-12 col-md-5 my-2">
+                            <li class="col-12 order-first order-sm-1 col-md-5 my-2">
                                 <p class="fs-5">Studenti online negli ultimi 30 minuti</p>
                                 <p class="fs-1">125</p>
                             </li>
-                            <li class="col-12 col-md-2 mb-3">
+                            <li class="col-12 col-md-2 order-sm-2 mb-3">
                                 <span class="fs-5 me-2">Nuovo studente</span>
                                 <button class="btn text-white border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid p-1 py-2 fs-5 fa-plus"></i></button>
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <h4 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
                                         
+                                        <form class="row g-3">
+                                          <div class="row mb-3 g-3">
+                                            <div class="col">
+                                              <label class="form-label fs-5 fw-semibold">Nome</label>
+                                              <input type="text" class="form-control bg-white border h-50" aria-label="First name">
+                                            </div>
+                                            <div class="col">
+                                              <label class="form-label fs-5 fw-semibold">Cognome</label>
+                                              <input type="text" class="form-control bg-white border h-50" aria-label="Last name">
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6 pt-2">
+                                            <span class="fw-semibold fs-5">Email</span>
+                                            <div class="input-group">
+                                              <div class="input-group-text">@</div>
+                                              <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label fs-5 fw-semibold">Password</label>
+                                            <input type="password" class="form-control h-50" id="inputPassword4">
+                                          </div>
+                                          <div class="col-12">
+                                            <label for="inputAddress" class="form-label fw-semibold fs-5">Indirizzo</label>
+                                            <input type="text" class="form-control bg-white border h-50" id="inputAddress">
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label for="inputCity" class="form-label fs-5 fw-semibold">Città</label>
+                                            <input type="text" class="form-control bg-white border h-50" id="inputCity">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <label for="inputState" class="form-label fs-5 fw-semibold">Stato</label>
+                                            <select id="inputState" class="form-select h-50">
+                                              <option selected>Scegli</option>
+                                              <option>Lombardia</option>
+                                              <option>Sardegna</option>
+                                              <option>Campania</option>
+                                              <option>Sicilia</option>
+                                              <option>Toscana</option>
+                                            </select>
+                                          </div>
+                                          <div class="col-md-2">
+                                            <label for="inputZip" class="form-label fs-5 fw-semibold">Cap</label>
+                                            <input type="text" class="form-control bg-white border h-50 ps-1" id="inputZip">
+                                          </div>
+                                          <span class="fs-5 fw-semibold">Foto</span>
+                                          <div class="input-group mb-3">
+                                            <input type="file" class="form-control" id="inputGroupFile01">
+                                          </div>
+                                          <div class="col-12">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                                              <label class="form-check-label fw-semibold" for="gridCheck">
+                                                Seleziona per proseguire
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Salva</button>
+                                            <button type="reset" class="btn btn-warning">Svuota</button>
+                                          </div>
+                                        </form>
                                     </div>
                                 </div>
                             </li>
@@ -260,7 +322,7 @@
                                           </ul>
                                     </div>
                                 </div>
-                                <div class="card p-4">
+                                <div class="card mb-3 p-4">
                                     <div class="card">
                                         <img src="img/stats.jpeg" class="rounded" alt="stats">
                                     <div class="card-body">

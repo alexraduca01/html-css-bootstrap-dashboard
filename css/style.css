@@ -66,6 +66,9 @@ input[type=text]  {
 .cursor_pointer {
     cursor: pointer;
 }
+.offcanvas {
+    width: 50%!important;
+}
 
 /* colors */
 
@@ -101,10 +104,7 @@ input[type=text]  {
         flex-direction: column-reverse;
         align-items: start;
     }
-    .navbar_list :nth-child(1) {
-        order: 2;
-    }
-    .navbar_list :nth-child(3) {
-        order: 3;
+    .offcanvas {
+        width: 75%!important;
     }
 }
