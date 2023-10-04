@@ -63,6 +63,9 @@ input[type=text]  {
     background-color: white;
     margin-right: 5px;
 }
+.cursor_pointer {
+    cursor: pointer;
+}
 
 /* colors */
 
